@@ -7,8 +7,8 @@ file_name = "d533101.dat"
 frequency=10000
 data = np.reshape(np.fromfile(file_name,dtype=np.int16,count=-1),(8,-1), order='F')
 
-subprogram.plotData(data,120,128,frequency)
-#subprogram.plotData(data,120,129,frequency)
-plt.show()
+# subprogram.plotData(data,120,128,frequency)
+# #subprogram.plotData(data,120,129,frequency)
+# plt.show()
 
-
+datasample = data[0:4,0:60*frequency]
